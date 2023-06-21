@@ -1,0 +1,57 @@
+.my-board-container {
+    display: flex;;
+    width: 100%;
+    height: 100%;
+    background-color: #89cff0;
+    position: fixed;
+}
+
+.col-33 {
+    width: 220px;
+    min-width: 220px;
+    height: 100vh;
+    background-color: yellow;
+    border-right: 1px black solid;
+    display: block;
+}
+
+.col-66 { 
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(170, 116, 116);
+    justify-content: right;
+}
+
+.mission {
+    color: black;
+    padding: 15px 18px 20px 18px;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 2;
+}
+
+.all-project {
+    background-color: wheat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.create-ws {
+    display: inline-flex;
+}
+
+.cong-symbol {
+    text-align: right;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.ms-button {
+    margin: 10px;
+    border: 2px solid;
+    border-color: #E0E3E7;
+}

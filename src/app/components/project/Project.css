@@ -1,0 +1,106 @@
+.tag-project {
+    justify-content: space-between;
+    height: 100vh;
+    
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+  
+  
+:root {
+  --bg-accent: #484a4d;
+  --text-color: black;
+  --nav-size: 60px;
+  --border: none;
+  --border-radius: 8px;
+  --speed: 300ms; 
+}
+  
+  a {
+    color: var(--text-color);
+    text-decoration: none;;
+  }
+  
+  
+.my-dropdown {
+    position: absolute;
+    width: 220px;
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1px;
+    overflow: auto;
+    transition: height var(--speed) ease;
+    height: 100vh;
+  }
+  
+  .menu {
+    width: 100%;
+  }
+  
+  .menu-item {
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: background var(--speed);
+    padding: 0.3rem;
+  }
+  
+  .menu-item .icon-button {
+    margin-right: 0.5rem;
+  }
+  
+  
+  .menu-item .icon-button:hover {
+    filter: none;
+  }
+  
+  .menu-item:hover {
+    color: white;
+    background-color: #525357;
+  }
+  
+  .icon-right {
+    margin-left: auto;
+  }
+  
+  /* CSSTransition classes  */
+  .menu-primary-enter {
+    position: absolute;
+    transform: translateX(-110%);
+  }
+  .menu-primary-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+  }
+  .menu-primary-exit {
+    position: absolute;
+  }
+  .menu-primary-exit-active {
+    transform: translateX(-110%);
+    transition: all var(--speed) ease;
+  }
+  
+  
+  .menu-secondary-enter {
+    transform: translateX(110%);
+  }
+  .menu-secondary-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+  }
+  .menu-secondary-exit {
+    padding: none;
+  }
+  .menu-secondary-exit-active {
+    transform: translateX(110%);
+    transition: all var(--speed) ease;
+  }
+  
+.text-project {
+  font-size: 20px;
+}
